@@ -1,23 +1,10 @@
-import Link from "next/link";
-import A from "../components/A";
+import MainContainer from "../components/MainContainer";
 
 const Index = () => {
     return (
-        <div>
-            <div className="navbar">
-                <A href="/" text="главная" />
-                <A href="/users" text="пользователи" />
-            </div>
+        <MainContainer keywords={"main page"} title={"Главная"}>
             <h1>Главная страница</h1>
-            <style jsx>
-                {`
-                    .navbar {
-                        background: #55acac;
-                        padding: 15px;
-                    }
-                `}
-            </style>
-        </div>
+        </MainContainer>
     );
 };
 
