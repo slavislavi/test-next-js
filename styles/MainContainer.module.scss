@@ -1,8 +1,15 @@
 .navbar {
+    display: flex;
+    align-items: center;
     background: #55acac;
-    padding: 15px;
+    padding: 0 40px;
+    height: 50px;
 }
 
 .content {
-    margin: 20px 20px;
+    background-image: url(../public/bg.jpg);
+    height: calc(100vh - 50px);
+    padding: 0 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

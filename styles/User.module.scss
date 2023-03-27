@@ -1,5 +1,28 @@
 .user {
     h1 {
-        color: red;
+        color: #e668b5;
+        margin-bottom: 50px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 75px;
+            background: linear-gradient(to right, #e668b5, #55acac 100%);
+            display: block;
+            height: 2px;
+            width: 100%;
+        }
+    }
+
+    p {
+        color: #066d74;
+        margin-bottom: 7px;
+        font-weight: 500;
+    }
+
+    span {
+        padding-left: 5px;
+        color: #313131;
     }
 }

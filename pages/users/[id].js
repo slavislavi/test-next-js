@@ -8,8 +8,13 @@ export default function User({ user }) {
     return (
         <MainContainer keywords={"user, person, profile"} title={user.name}>
             <div className={styles.user}>
-                <h1>Пользователь c id {query.id}</h1>
-                <div>Имя пользователя: {user.name}</div>
+                <h1>{user.name}</h1>
+                <p>Имя: <span>{user.name}</span></p>
+                <p>Никнейм: <span>{user.username}</span></p>
+                <p>Почта: <span>{user.email}</span></p>
+                <p>Город: <span>{user.address.city}</span></p>
+                <p>Улица: <span>{user.address.street}</span></p>
+                <p>Место работы: <span>{user.company.name}</span></p>
             </div>
         </MainContainer>
     );
